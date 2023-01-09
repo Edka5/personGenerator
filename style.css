@@ -1,0 +1,14 @@
+body {
+    background-image : url(https://images.unsplash.com/photo-1670939283443-049948ea89dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    position : absolute;
+    top : 30%;
+    left : 50%;
+    transform : translate(-50%,-50%);
+    width : 90%;
+    }
+    .card-body {
+    background-color : rgb(215, 250, 225);
+    }
+    .card-header, .card-footer {
+    background-color : rgb(167, 250, 250);
+    }
