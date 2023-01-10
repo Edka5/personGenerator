@@ -50,21 +50,7 @@ const personGenerator = {
             "id_10": "Андреевич"
         }
     }`,
-    middleNameFemaleJson: `{
-        "count": 10,
-        "list": {
-            "id_1": "Александровна",
-            "id_2": "Максимовна",
-            "id_3": "Ивановна",
-            "id_4": "Артемовна",
-            "id_5": "Дмитриевна",
-            "id_6": "Михайловна",
-            "id_7": "Николаевна",
-            "id_8": "Данииловна",
-            "id_9": "Егорьвна",
-            "id_10": "Андреевна"
-        }
-    }`,
+
     firstNameFemaleJson: `{
         "count": 10,
         "list": {     
@@ -136,9 +122,7 @@ const personGenerator = {
     randomMiddleNameMale: function () {
         return this.randomValue(this.middleNameMaleJson);
     },
-        randomMiddleNameFemale: function () {
-        return this.randomValue(this.middleNameFemaleJson);
-    },
+
     randomFirstNameFemale: function () {
         return this.randomValue(this.firstNameFemaleJson);
     },
@@ -167,7 +151,7 @@ const personGenerator = {
             this.person.lastName += 'a';
             this.person.firstName = this.randomFirstNameFemale();
             this.person.profession = this.randomProfessionFemale();
-            this.person.middleName = this.randomMiddleNameFemale();      
+            this.person.middleName = this.randomMiddleNameMale().slice(0, -2) + 'на';      
         }
         else {
             this.person.firstName = this.randomFirstNameMale();
